@@ -1,0 +1,244 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+    box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000000;
+}
+
+@keyframes slideup {
+    from {
+        top: -100px;
+        opacity: 0.5;
+    }
+
+    to {
+        top: 0;
+    }
+}
+
+header {
+    color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+    color: white;
+}
+
+    .navbar-dark .navbar-nav .nav-link:hover {
+        color: #d7a140;
+    }
+
+body {
+    margin-bottom: 60px;
+    background-image: url("/css/Images/celestialcore_bg.jpg");
+    background-repeat: round;
+    overflow-x: hidden;
+    color: white;
+}
+
+#Home {
+    margin-top: 80px;
+    margin-left: 20px;
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    background: #376e82;
+    padding: 10px 15px 10px 15px;
+    text-align: justify-all;
+    animation: slideup 3s;
+}
+
+#About {
+    margin-top: 200px;
+    margin-left: 10px;
+    margin-right: 20px;
+    position: relative;
+    float: right;
+    width: 70%;
+    background: #122e43;
+    padding: 30px 15px 50px 15px;
+    animation: slideup 3s;
+}
+
+#PFP {
+    margin-top: 20px;
+    float: inline-start;
+}
+
+#profile {
+    border-radius: 100%;
+    margin-left: 20px;
+    border: solid 3px;
+    border-color: white;
+}
+
+#Personal {
+    color: #344A53;
+    float: right;
+    margin-top: 30px;
+    margin-right: 40px;
+    width: 575px;
+    background: #f4df92;
+    padding: 0 15px 20px 15px;
+    font-family: 'Bookman Old Style';
+    font-size: 18px;
+}
+
+#Details {
+    font-size: 15px;
+}
+
+#Art {
+    margin-top: 75px;
+    margin-left: 130px;
+    position: relative;
+    float: left;
+    width: 80%;
+    background: #10496c;
+    padding: 20px 35px 30px 35px;
+    animation: slideup 3s;
+}
+
+.gallery-wrap {
+    display: flex;
+    background: #122e43;
+    align-items: center;
+    justify-content: center;
+}
+
+#backBtn, #nextBtn {
+    width: 50px;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.gallery {
+    width: 1000px;
+    height: 400px;
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px;
+}
+
+    .gallery div {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+    }
+
+        .gallery div img {
+            margin-top: 20px;
+            width: 400px;
+            height: 300px;
+            object-fit: contain;
+            transition: transform 0.5s;
+        }
+
+            .gallery div img:hover {
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+
+    .gallery::-webkit-scrollbar {
+        display: none;
+    }
+
+.other-games {
+    margin-top: 115px;
+    margin-left: 10px;
+    display: inline-block;
+    position: relative;
+    float: left;
+    padding: 5px;
+    width: 20%;
+    animation: slideup 3s;
+}
+
+    .other-games .crane-machine {
+        margin-top: 8px;
+        color: white;
+        background: #10496c;
+        padding: 10px 15px 1px 15px;
+        font-family: 'Bookman Old Style';
+        font-size: 18px;
+    }
+
+#Games {
+    margin-top: 95px;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-bottom: 100px;
+    position: relative;
+    float: right;
+    width: 75%;
+    background: #387087;
+    padding: 20px 0px 30px 35px;
+    animation: slideup 3s;
+}
+
+.column {
+    float: left;
+    width: 32%;
+    padding: 10px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.content {
+    background: #10496c;
+    padding: 10px;
+}
+
+    .content:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        color: #d7a140;
+        opacity: 1;
+    }
+
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+
+footer .footer-dark {
+    overflow: hidden;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
